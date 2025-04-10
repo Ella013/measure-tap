@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeasureTap - 단위 변환기</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>MeasureTap</h1>
+        <div class="converter">
+            <div class="input-group">
+                <input type="number" id="inputValue" placeholder="값을 입력하세요">
+                <select id="fromUnit">
+                    <option value="mm">밀리미터 (mm)</option>
+                    <option value="cm">센티미터 (cm)</option>
+                    <option value="m">미터 (m)</option>
+                    <option value="km">킬로미터 (km)</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <input type="number" id="outputValue" readonly>
+                <select id="toUnit">
+                    <option value="mm">밀리미터 (mm)</option>
+                    <option value="cm">센티미터 (cm)</option>
+                    <option value="m">미터 (m)</option>
+                    <option value="km">킬로미터 (km)</option>
+                </select>
+            </div>
+            <button onclick="convert()">변환</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
